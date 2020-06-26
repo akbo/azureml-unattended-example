@@ -1,0 +1,17 @@
+name: azure_ml_unattended_experiment_example
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8.2
+  - pylint
+  - pandas
+  - xlrd
+  - invoke
+  - black
+  - fire
+  - pyarrow
+  - tabulate
+  - pip
+  - pip:
+      - azureml-sdk

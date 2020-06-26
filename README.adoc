@@ -1,0 +1,37 @@
+= Azure ML Unattended Experiments Example
+
+Running an unattended experiment is the opposite of working interactively. An example would be running a script to train a machine learning model. With Azure ML you can easily run Python code on a cloud virtual machine of your chosen size. The run can be triggered from within Python and results can be gathered after the run has finished. This repository contains example code for doing unattended experiments on Azure Machine Learning:
+
+* How to make data available to the run
+* How to specify Python dependencies
+* How to define what code to run
+* How to start the run
+* How to gather results
+
+== How to use the example code
+
+
+. Change `.azureml/config.json` so it points to your Azure ML workspace.
+. Create and activate the conda environment on your machine: From within the repo directory, first run
++
+[source, sh]
+....
+$ conda env create
+....
+then run
++
+[source, sh]
+....
+$ conda activate azure_ml_unattended_experiment_example
+....
+. Now that the environment is set up, you can run
++
+[source, sh]
+....
+$ python azure_ml_unattended_experiments_example.py
+....
+
+== Further Reading
+
+* https://docs.microsoft.com/en-us/azure/machine-learning/how-to-train-scikit-learn[Introductory Article about unattended experiments]
+* https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/training/train-on-amlcompute/train-on-amlcompute.ipynb[Example Notebook]
